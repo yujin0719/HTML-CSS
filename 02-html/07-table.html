@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+	<!-- 표(table 요소, tr요소, th요소, td요소)표를 작성할 때는 블록 레벨 요소인 table요소를 사용한다. 표의 기본 구조는 먼저 tr요소로 행(table row)을 정의하고 내용으로 제목 셀(table header cell)인 th요소와 데이터 셀(table data cell)인 td요소를 포함하여 전체를 table요소로 둘러싼다. -->
+
+	<!-- 표의 행을 그룹화하기 위해서 thead 요소, tbody 요소, tfoot 요소를 사용할 수 있다. -->
+
+	<!-- html5에서는 summary속성을 사용하지 말고, figure와 figcaption을 활용한다. caption 요소에서 간단한 설명을 추가할 수도 있다. -->
+
+</head>
+<body>
+
+<table border width="100%">
+	<!-- 표의 제목은 table요소의 시작태그 뒤에 caption요소를 사용한다. -->
+	<caption>table caption</caption>
+	<colgroup>
+		<col width="200">
+		<col>
+		<col>
+		<col>
+	</colgroup>
+	<!-- thead는 분류제목, tr(row)은 행(가로한줄)을 의미함 -->
+	<thead>
+		<tr>
+			<!-- scope = col | row | colgroup | rowgroup -->
+			<!-- th에는 scope를 반드시 써야한다. col이 나타내는 방향 -->
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+			<th scope="col">table header cell</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<!-- 왼쪽 row세개 합치기 rowspan -->
+			<td rowspan="3">table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+		<tr>
+			<!-- <td>table data cell</td> -->
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+		<tr>
+			<!-- <td>table data cell</td> -->
+			<td>table data cell</td>
+			<td>table data cell</td>
+			<td>table data cell</td>
+		</tr>
+	</tbody>
+	<tfoot>
+		<tr>
+			<th scope="row">result</th>
+			<!-- 나머지 column 세칸 합치기 colspan -->
+			<td colspan="3">...</td>
+			<!-- <td>...</td> -->
+			<!-- <td>...</td> -->
+		</tr>
+	</tfoot>
+</table>
+	
+</body>
+</html>

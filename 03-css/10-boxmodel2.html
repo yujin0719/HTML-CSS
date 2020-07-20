@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>boxmodels</title>
+	<style>
+	* {
+		margin: 0;
+		padding: 0;
+	} 
+	.box {
+		/*display: block;*/
+		/*display: inline;*/
+		display: inline-block;
+		margin: 20px;
+		padding: 20px;
+		/*padding-left:  200px;*/
+		/*padding: 100px 50px;  top bottom | right left  */
+		/*padding: 100px 50px 10px; top | right left | bottom*/
+		/*padding: 100px 50px 10px 0; top | right | bottom | left 시계방향 */
+
+		/*border-style : solid | dashed | dotted  | double | inset | outset | ridge | groove */
+		/*border-color*/
+		/*border-width*/
+		background-color: pink;
+		border-bottom: 5px solid black;
+		border-style: dotted;
+		/* top right bottom left */
+	}
+	
+	</style>
+</head>
+<body>
+
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ratione ipsum aspernatur nobis, velit culpa dolorem debitis nisi beatae fugiat esse. Voluptatum voluptate dolores vitae hic accusamus cupiditate, ut. Ratione.
+</div>
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ratione ipsum aspernatur nobis, velit culpa dolorem debitis nisi beatae fugiat esse. Voluptatum voluptate dolores vitae hic accusamus cupiditate, ut. Ratione.
+</div>
+<div class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas ratione ipsum aspernatur nobis, velit culpa dolorem debitis nisi beatae fugiat esse. Voluptatum voluptate dolores vitae hic accusamus cupiditate, ut. Ratione.
+</div>
+<span class="box">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis eum voluptatem excepturi repellendus, praesentium reiciendis ullam commodi perspiciatis minus, doloremque vero tempora distinctio consequatur quis provident quibusdam ut facilis?
+</span>
+
+	
+</body>
+</html>

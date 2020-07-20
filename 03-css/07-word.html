@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>word-break, white-space</title>
+	<style>
+	body{
+		font-family: 'Malgun Gothic',sans-serif;
+		font-size: 16px;
+	}
+	.content, .content2, .content3{
+		width: 500px;
+		border: 3px solid black;
+	}
+	.content p {
+		word-break: break-all;
+	}
+	.content2 p {
+		text-align: justify;
+	}
+	.content3 p {
+		text-align: justify;
+		word-break: break-all;
+	}
+	/*white-space : nowrap | pre */
+	.white {
+		width: 200px;
+		border: 2px solid black;
+		white-space: pre;
+	}
+	.white2 {
+		width: 200px;
+		border: 2px solid black;
+		white-space: pre-wrap;
+	}
+	.white3 {
+		width: 200px;
+		border: 2px solid black;
+		white-space: pre-line;
+	}
+	</style>
+</head>
+<body>
+
+<div class="content">
+	<p>Loremipsumdolorsitamet,consecteturadipisicingelit.Quia,omnisquasi.Laborummagnidelenitiet.Iustonisieligendinostrumdeseruntnemoaccusantiummollitiadebitis</p>
+</div>
+
+<div class="content2">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat officia tenetur, praesentium, qui eius neque totam culpa natus aliquam dolores ipsa? Facilis nihil sint cumque aliquid delectus, voluptates, molestias necessitatibus possimus tempora dolorem deserunt totam illum! Molestias a cumque consequatur accusamus illo. Totam iusto nobis ut voluptatem, sapiente error, dolore quibusdam eaque consectetur molestiae ducimus! Impedit mollitia quas beatae, at saepe, odio commodi minus, distinctio debitis ab labore itaque maxime dolore non. Fuga, perferendis, tempora. Deserunt ullam placeat nulla ex voluptate iste autem reprehenderit error? Cupiditate reiciendis nobis ducimus sit tempora culpa, recusandae cumque fuga possimus, quod, facilis laudantium, minima?</p>
+</div>
+<div class="content3">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat officia tenetur, praesentium, qui eius neque totam culpa natus aliquam dolores ipsa? Facilis nihil sint cumque aliquid delectus, voluptates, molestias necessitatibus possimus tempora dolorem deserunt totam illum! Molestias a cumque consequatur accusamus illo. Totam iusto nobis ut voluptatem, sapiente error, dolore quibusdam eaque consectetur molestiae ducimus! Impedit mollitia quas beatae, at saepe, odio commodi minus, distinctio debitis ab labore itaque maxime dolore non. Fuga, perferendis, tempora. Deserunt ullam placeat nulla ex voluptate iste autem reprehenderit error? Cupiditate reiciendis nobis ducimus sit tempora culpa, recusandae cumque fuga possimus, quod, facilis laudantium, minima?</p>
+</div>
+<hr>
+<div class="white">
+	Lorem 
+	ipsum dolor sit amet, 
+	consectetur adipisicing elit. 
+	Incidunt, odit. Repudiandae nihil 
+</div>
+<div class="white2">
+	Lorem 
+	ipsum dolor sit amet, 
+	consectetur adipisicing elit. 
+	Incidunt, odit. Repudiandae nihil 
+</div>
+<div class="white3">
+	Lorem 
+	ipsum dolor sit amet, 
+	consectetur adipisicing elit. 
+	Incidunt, odit. Repudiandae nihil 
+</div>
+
+	
+</body>
+</html>

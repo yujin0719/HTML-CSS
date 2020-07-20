@@ -1,0 +1,55 @@
+<!-- 14-example에서 div에 html5의 sectioning 유저를 도입한 것 
+ -->
+<!-- sectioning 요소
+section, article, nav, aside / header. footer -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>About | Enlighten Designs</title>
+	<!-- html5 요소를 포함하기 위해서 해야하는 작업 -->
+	<!-- if explore9보다 낮으면 이 스크립트를 시작하는것... -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<dl class="skip-nav">
+	<dt><strong>skip navigation</strong></dt>
+	<dd><a href="#contents">Skip to Contents</a></dd>
+</dl>
+<hr>
+<div id="wrap">
+
+	<!-- header -->
+	<header id="header">
+		<h1>Enlighten Designs</h1>
+		<nav>
+			<h2>Main menu</h2>
+		</nav>
+	</header>
+	<!-- //header -->
+	<!-- containder -->
+	<div id="container">
+		<!-- contents -->
+		<section id="contents">
+			<h2>About</h2>
+			<h2>Contact Us</h2>
+			
+		</section>
+		<!-- //contents -->
+		<!-- aside -->
+		<aside id="aside">
+			<h2>Aside</h2>
+		</aside>
+		<!-- //aside -->
+	</div>
+	<!-- //container -->
+	<!-- footer -->
+	<footer id="footer"></footer>
+	<!-- //footer -->
+
+</div>
+	
+</body>
+</html>

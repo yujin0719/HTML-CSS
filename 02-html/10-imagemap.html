@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>image map</title>
+</head>
+<body>
+
+<h1>이미지맵</h1>
+<p>
+	<img src="img/map.gif" usemap="#map" alt="">
+	<map name="map" id="map">
+		<!-- rect의 coords는 왼쪽 위 좌표, 오른쪽 위 좌표를 쓰는 곳  -->
+		<area shape="rect" coords="15,30,218,90" href="http://naver.com/" alt="네이버">
+		<!-- circle의 coords는 중점 좌표와 반지름을 쓰는 곳  -->
+		<area shape="circle" coords="308,55,50" href="http://daum.net/" alt="다음">
+		<!-- poly의 coords는 모든 꼭지점의 좌표를 쓰는 곳  -->
+		<area shape="poly" coords="550,35,570,49,570,65,550,78,532,65,532,49" href="http://nate.com/" alt="네이트">
+	</map>
+</p>	
+</body>
+</html>

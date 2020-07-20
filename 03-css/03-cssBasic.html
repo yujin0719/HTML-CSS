@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css selector</title>
+	<style>
+	body{
+		font-size: 12px;
+	}
+	h1,p{
+		text-decoration: underline;
+	}
+	.lead {
+		color: pink;
+	}
+	#lead{
+		background-color: skyblue;
+	}
+	#header p {
+		border: 3px solid black;
+	}
+	#header h1 + p{
+		background-color: yellow;
+	}
+	.list li + li {
+		background-color: purple;
+	}
+	a[title]{
+		background-color: orange;
+		color: white;
+	}
+	a[href ^= "http://"]{
+		background-color: black;
+		color: yellow;
+	}
+	a[href $= ".pdf"]{
+		background-color: blue;
+	}
+	li[title ~= 'sample']{
+		background-color: lime;
+	}
+	li[title *= 'sam']{
+		background-color: red;
+	}
+	li[lang |= "ja"]{
+		border-bottom: 2px solid blue;
+	}
+	</style>
+</head>
+<body>
+<div id="wrap">
+	<div id="header">
+		<h1>css selector</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta minus aliquam sint nesciunt provident nemo eum praesentium, debitis quas quo atque voluptas numquam in qui ipsam, odio placeat ea sapiente?</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, in unde iste assumenda nisi quos, adipisci dolorum qui voluptatem iure exercitationem, ex facere provident labore mollitia dicta facilis delectus. Eveniet.</p>
+	</div>
+	<div id="content">
+		<p id="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia iusto sunt ea saepe asperiores excepturi nemo, quod qui similique voluptatem eaque omnis officiis, magni necessitatibus expedita nihil porro accusantium libero.</p>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus soluta laborum quam dicta in facere sapiente placeat est, quaerat. Nisi fuga nulla veritatis laudantium ratione harum quidem blanditiis, consequatur recusandae!</p>
+		<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam asperiores magni ipsam ratione praesentium, iusto esse eaque sit ducimus, in quos et, unde corporis! Quae cum sed nobis exercitationem esse!</p>
+		<ol class="list">
+			<li lang="en">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li lang="zh">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li lang="ja">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+		</ol>
+		<ul>
+			<li><a href="http://naver.com">naver</a></li>
+			<li><a href="http://daum.net">daum</a></li>
+			<li><a href="mailto:help@host.co.kr" title="help mail">help</a></li>
+			<li><a href="file/download.pdf">download</a></li>
+			<li title="some text sample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, delectus?</li>
+		</ul>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quis, minima iure explicabo, praesentium quisquam totam numquam non perspiciatis consequatur exercitationem excepturi alias odio ipsum fuga laborum ex, nihil optio.</p>
+	</div>
+</div>
+	
+</body>
+</html>

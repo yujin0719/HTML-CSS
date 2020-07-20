@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html5 form</title>
+</head>
+<body>
+<form action="#" method="post">
+	<fieldset>
+		<!-- html5에서 추가된 다양한 속성들
+		novalidate : 문법검사 하지 않음
+		accept-charset : 전송할 데이타를 지정한 문자코드셋으로 변환
+		disabled : 사용할 수 없는 상태로 지정
+		list : 목록힌트 제공
+		max / min : 최소값과 최대값지정
+		step : 단계 지정
+		pattern : 문법지정 - 참고) http://www.w3schools.com/js/js_regexp.asp
+		placeholder : 입력힌트 지정
+		autofocus : 자동으로 포커스를 가지게 될 요소에 지정
+		required : 필수입력항목 지정
+		autocomplete : 자동완성 on / off -->
+		
+		<legend>html5 form</legend>
+		<p>
+			<label for="username">이름</label>
+			<input type="text" id="username" name="username" value="" placeholder="이름을 입력하세요." >
+		</p>
+		<p>
+			<label for="useremail">이메일</label>
+			<input type="email" id="useremail" name="useremail" value="" autofocus="autofocus">
+		</p>
+		<p>
+			<label for="website">웹사이트</label>
+			<input type="url" id="website" name="website" value="" required="required">
+		</p>
+		<p>
+			<label for="order">주문수량</label>
+			<input type="number" id="order" name="order" min="1" max="20" value="">
+			<span>개</span>
+		</p>
+		<p>
+			<label for="userrange">길이</label>
+			<input type="range" id="userrange" name="userrange" min="0" max="100" step="10" value="30">
+		</p>
+		<p>
+			<label for="userdate">제출일</label>
+			<input type="date" id="userdate" name="userdate" min="2020-01-01" max="2020-12-31" value="2020-04-22">
+		</p>
+		<p>
+			<label for="choicecolor">색상선택</label>
+			<input type="color" id="choicecolor" name="choicecolor" value="#11b815">
+		</p>
+		<p>
+			<label for="phone">연락처</label>
+			<input type="tel" id="phone" name="phone" value="">
+		</p>		
+	</fieldset>
+	<input type="submit" value="send">
+</form>
+</body>
+</html>

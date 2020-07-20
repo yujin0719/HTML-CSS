@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>responsible web</title>
+	<style>
+	body {
+		color: #555;
+		font: 12px/1.5 'Trebuchet MS', sans-serif;
+	}
+	#wrap {
+		width: 970px;
+		margin: 0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}
+	@media screen and (min-width: 1200px) {
+		#wrap {
+			width: 1200px;
+		}
+	}
+	@media screen and (max-width: 970px) {
+		#wrap {
+			width: auto;
+		}
+	}
+	@media screen and (max-width: 970px) and (min-width: 481px) {
+		body {
+			background-color: pink;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		body {
+			font-size: 14px;
+		}
+	}
+	/* portrait는 세로가 가로보다 길어진 것 */
+	@media screen and (orientation: portrait) {
+		h1:after {
+			content: '  portrait view';
+			font-size: .8em;
+			color: skyblue;
+		}
+	}
+	/* landscape는 세로가 가로보다 길어진 것 */
+	@media screen and (orientation: landscape) {
+		h1:after {
+			content: '  landscape view';
+			font-size: .8em;
+			color: lightgreen;
+		}
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>LOGO</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, amet deleniti numquam eos corrupti sed veniam sit ea qui perspiciatis dolor nihil! Porro veritatis, iste, molestias recusandae dolore dolor provident blanditiis ipsum neque quasi delectus iure inventore odit quam maxime aperiam. Similique inventore, unde iure? Nulla temporibus, incidunt, tenetur debitis optio neque pariatur aperiam sunt placeat rem ut, quo ipsum minus mollitia cupiditate nisi itaque quaerat. Veniam odio enim aut quibusdam odit ab, veritatis ipsam deleniti ullam eaque nostrum facere quis eveniet corporis consequatur, reiciendis eos! Harum reprehenderit assumenda impedit rem eum hic, nemo repudiandae vero nisi, laudantium est! Sed.</p>
+</div>
+</body>
+</html>

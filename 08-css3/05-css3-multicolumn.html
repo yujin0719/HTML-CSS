@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>multi columns</title>
+	<style>
+	body {
+		font: 12px 'Malgun Gothic',sans-serif;
+	}
+	#wrap {
+		width: 80%;
+		margin: 0 auto;
+		/*-moz-column-count: 3;*/
+		/*-webkit-column-count: 3;*/
+
+		/*column-count: 3;
+		column-gap: 20px;
+		column-rule: 1px dashed #aaa;*/
+
+		/*column-width: 200px;*/
+
+		columns: 100px 3;
+	}
+	#wrap h1 {
+		/* h1은 column 나눈 것을 적용하지 않음 */
+		column-span: all;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+	<h1>multi columns</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorem architecto autem, sit iste amet minima, perspiciatis unde fugiat adipisci tempora doloribus! Error architecto quo, suscipit, officia sequi minus harum!</p>		
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quam autem veniam quae nemo unde nisi atque, voluptatibus. Adipisci, maxime, beatae. Itaque magni eveniet temporibus suscipit ullam quam non ea dolores, obcaecati, fugit qui id deleniti facilis, expedita libero quasi nihil, quia ad totam veniam dolore! Voluptatem nostrum consectetur molestias officiis in, architecto fuga expedita ipsam vero adipisci delectus sunt sed minima, sequi voluptas asperiores id placeat necessitatibus amet ullam beatae, aperiam error odio tempora! Voluptates ullam, cumque eum error. Perferendis quod ea est alias velit, ipsum repudiandae neque odio facilis, tempora tenetur nostrum deleniti possimus molestias aliquam, labore iure!</p>
+	</div>	
+</body>
+</html>

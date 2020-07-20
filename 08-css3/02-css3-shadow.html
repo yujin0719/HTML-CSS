@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shadow 그림자 효과</title>
+	<style>
+	/*
+		selector {
+			-webkit-attribute: value; Chrome, Safari
+			-moz-attribute: value; Firefox
+			-ms-attribute: value; IE,outlook
+			-o-attribute: value; opera
+			attribute: value; 표준
+		}
+		==> 이거 사용해야하는 경우가 있으므로 CSS3 generator에서 확인해보기 
+
+	*/
+	#wrap {
+		width: 600px;
+		margin: 0 auto;
+	}
+	#wrap h1 {
+		border: 1px solid #333;
+		padding: .5em;
+		font: bold 100px arial,sans-serif;
+		text-transform: uppercase;
+		/*text-shadow: h-shadow v-shadow blur-radius color|none|initial|inherit;*/
+		text-shadow: 
+			2px 2px 0 rgba(255,255,255,1),
+			-20px 10px 10px rgba(0,0,0,.4);
+		/*box-shadow: none|h-offset v-offset blur spread color |inset|initial|inherit;*/
+		box-shadow:
+			10px 10px 20px rgba(0,0,0,.5),
+			inset 5px 5px 10px rgba(255,0,0,.3);
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>shadow</h1>
+	</div>	
+</body>
+</html>

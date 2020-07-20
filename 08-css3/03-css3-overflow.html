@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>text-overflow 말줄임</title>
+	<style>
+	#wrap {
+		width: 600px;
+		padding: 20px;
+		margin: 0 auto;
+		border: 1px solid black;
+		border-width: 0 1px; 
+		font: 12px arial,sans-serif;
+	}
+	.sample {
+		display: block;
+		overflow: hidden;
+		width: 100%;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<p class="sample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dignissimos deleniti doloremque sit animi sapiente laboriosam et molestias voluptates sunt non soluta quibusdam dolorem expedita, consequatur facilis aspernatur quaerat? Adipisci!</p>
+		<span class="sample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium sunt voluptatibus eveniet iste dignissimos deleniti adipisci illo quo, corporis voluptatum pariatur minima at accusantium repellat voluptas debitis vero perspiciatis, explicabo.</span>
+	</div>	
+</body>
+</html>

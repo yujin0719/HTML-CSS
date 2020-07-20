@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>background 배경처리</title>
+	<style>
+	body {
+		font: 12px 'Malgun Gothic',sans-serif;
+	}
+	.box {
+		width: 400px;
+		padding: 20px;
+		border: 3px solid black;
+		/*background: url() no-repeat position/size(가로 세로);*/
+		background: 
+			/*url(img/twt.png) no-repeat 50px 30px,*/
+			/*url(img/insta.png) no-repeat 55px 35px,*/
+			url(img/photo.jpg) no-repeat 0 0 / cover;
+
+		 /*배경 이미지나 배경색을 그 박스 중 어디에 넣을 지 정하는 속성이 background-clip
+			border-box : 테두리 영역과 그 안쪽 영역을 채웁니다.
+			padding-box : 안쪽 여백 영역과 그 안쪽 영역을 채웁니다.
+			content-box : 내용 영역과 그 안쪽 영역을 채웁니다.
+		 */
+		background-clip: content-box;
+		 /*background-origin으로 배경 이미지를 어느 영역부터 채워나갈지를 정합니다.
+			border-box : 테두리 영역 왼쪽 위부터 채웁니다.
+			padding-box : 안쪽 여백 영역 왼쪽 위부터 채웁니다.
+			content-box : 내용 영역 왼쪽 위부터 채웁니다.
+		 */
+		background-origin: content-box;
+		color: white;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="box">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, labore. Dolorem, perferendis iusto aliquam deserunt laboriosam modi ratione minima id autem incidunt, delectus quas fugiat deleniti ut, animi nesciunt ea sit. Illum vero aperiam, error. Adipisci accusantium officiis illo eum laboriosam veritatis quaerat obcaecati unde eligendi enim aliquid alias accusamus, similique quam quo ab, molestias laudantium natus perspiciatis, dicta quia commodi! In sint illum itaque ad error rerum dignissimos animi iusto. Perspiciatis quae fugiat illum id aliquid eius eveniet debitis porro consectetur fugit aut voluptatem accusantium, suscipit quia impedit veniam doloribus vero voluptate laboriosam quam quibusdam, velit minima est nihil.</p>
+		</div>
+	</div>
+</body>
+</html>

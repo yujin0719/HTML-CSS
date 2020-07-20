@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css3 selector (선택자)</title>
+	<style>
+		html{font-size: 20px;}
+		body {font: 12px 'Trebuchet MS', sans-serif}
+		/*rem은 html(:root) fontsize 기준*/
+		h1 {font-size: 1rem}
+		/* h1 바로 다음에 오는 (인접한) p에만 적용 => h1 + p */
+		/* h1 뒤에 오는 모든 형제 p => h1 ~ p */
+		.wrap h1 ~ p {background-color: pink;}
+		/*a 요소 중 href 속성의 값이 http로 시작하는 것*/
+		.wrap a[href ^= "http"] {background-color: skyblue;}
+		.wrap a[href ^= "mail"] {background-color: khaki;}
+		/*a 요소 중 href 속성의 값 중 확장자가 pdf인 것 (pdf로 끝남)*/
+		.wrap a[href $= "pdf"] {background-color: greenyellow;}
+		/*a 요소 중 title 속성의 값에 이동이 포함되어있는 것*/
+		.wrap a[title *= "이동"] {color: lightcoral;}
+		/* 비어있는 p (띄어쓰기만이라도 되어있으면 empty가 아님 */
+		.wrap p:empty {border-bottom: 1px solid olive;}
+		/*ol li:first-child {border-bottom: 3px solid tomato;}*/
+		/*ol li:last-child {border-bottom: 3px solid tomato;}*/
+		/*ol li:nth-child(3) {border-bottom: 3px solid tomato;}*/
+		/*ol li:nth-child(3n) {border-bottom: 3px solid tomato;}*/
+		/*ol li:nth-child(3n+2) {border-bottom: 3px solid tomato;}*/
+		/*ol li:nth-last-child(3) {border-bottom: 3px solid tomato;}*/
+
+		/* dd와 dt는 nth-child 보다는 nth-of-type 사용이 좋다.*/
+		/*dl dd:nth-of-type(1) {background-color: silver;}*/
+		dl dd:nth-last-of-type(2) {background-color: silver;}
+		#sample {display: none}
+		#sample:target {display: block;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		<h1>css3 selector</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est natus voluptatem voluptas, quasi deleniti esse maxime adipisci. Blanditiis sequi voluptates eum, quasi, sed non saepe aut reprehenderit aperiam, praesentium sit.</p>
+		<p>Lorem ipsum dolor sit amet</p>
+		<p><a href="#sample">DL Sample</a></p>
+		<dl id="sample">
+			<dt>decription terms</dt>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+			<dt>decription terms</dt>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+			<dt>decription terms</dt>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+			<dt>decription terms</dt>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</dd>
+			<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo hic officiis, nostrum voluptas modi? Suscipit quas, aliquid dignissimos animi soluta velit, deleniti illo officia, voluptatem ut quasi, temporibus corrupti magni?</dd>
+		</dl>
+		<ol>
+			<li><a href="http://naver.com" title="네이버로">naver</a></li>
+			<li><a href="http://daum.net" title="다음으로 이동">daum</a></li>
+			<li><a href="mailto:webzit@naver.com">mailing</a></li>
+			<li><a href="download/sample.pdf" title="pdf파일 다운로드">download</a></li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+			<li>Lorem ipsum dolor sit.</li>
+		</ol>
+		<p></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolorem, hic voluptate soluta eveniet. At dolor laborum dignissimos, iste, ipsum totam ratione sint tenetur cumque aliquam debitis assumenda, esse sed.</p>
+
+	</div>
+</body>
+</html>

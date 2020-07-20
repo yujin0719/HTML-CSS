@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css basic</title>
+	<style>
+		body{
+			/* 배경에 그림 넣기*/
+			background: url(img/bg.jpg);
+		}
+		h1{
+			/*색상을 표현하는 방법 -> 2번째를 가장 많이 사용*/
+			/*1. color: pink;*/
+			/*2. color: #ff0000;*/
+			/*3. color: #f00*/
+			/*4. color: rgb(255,192,203);*/
+			/*5. color: rgb(100%,0%,0%);*/
+			/*6. 색상,채도,명도*/
+				/*color: hsl(0,100%,50%); */
+			/*7. 투명도 지정 -> 0부터 1까지*/
+				/*color: rgba(255,0,0,.6);*/
+			/*8. */
+			color: hsla(0,100%,50%,.4);
+			/*1em은 한글자 크기*/
+			font-size: 10em;
+		}
+		p {
+			/*길이표현*/
+			/*width: 500px;*/
+			/*width: 50em;*/
+			/*width: 50%;*/
+			widows: 50rem;
+			background-color: skyblue;
+			font-size: 12px;
+		}
+	</style>
+</head>
+<body>
+
+<h1>css basic</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum voluptate nesciunt ex voluptatum iusto distinctio, minus omnis maxime unde ipsam odio dolore, beatae accusamus non saepe in, aliquam facilis assumenda.</p>
+	
+</body>
+</html>

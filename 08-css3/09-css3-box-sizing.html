@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>box sizing</title>
+	<style>
+	body {
+		font: 12px 'Malgun Gothic',sans-serif;
+	}
+	.box {
+		/*box-sizing은 박스의 크기를 어떤 것을 기준으로 계산할지를 정하는 속성입니다.
+			content-box : 콘텐트 영역을 기준으로 크기를 정합니다.
+			border-box : 테두리를 기준으로 크기를 정합니다
+		*/
+		width: 400px;
+		border: 5px solid black;
+		padding: 20px;
+		box-sizing: border-box;
+		background-color: pink;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, labore. Dolorem, perferendis iusto aliquam deserunt laboriosam modi ratione minima id autem incidunt, delectus quas fugiat deleniti ut, animi nesciunt ea sit. Illum vero aperiam, error. Adipisci accusantium officiis illo eum laboriosam veritatis quaerat obcaecati unde eligendi enim aliquid alias accusamus, similique quam quo ab, molestias laudantium natus perspiciatis, dicta quia commodi! In sint illum itaque ad error rerum dignissimos animi iusto. Perspiciatis quae fugiat illum id aliquid eius eveniet debitis porro consectetur fugit aut voluptatem accusantium, suscipit quia impedit veniam doloribus vero voluptate laboriosam quam quibusdam, velit minima est nihil.
+		</div>
+	</div>
+</body>
+</html>

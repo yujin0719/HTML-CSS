@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>font /text</title>
+	<style>
+	body,h1,h2{
+		/*font-family: '돋움',dotum,Helvetica,sans-serif;*/
+		font-family: 'Malgun Gothic',Helvetica,sans-serif;
+		font-size: 12px;
+	}
+	h1{
+		background-color: green;
+		font-size: 2.4em;
+		letter-spacing: 1em;
+		text-transform: uppercase;
+		/* uppercase | lowercase | capatalize */
+	}
+	h1 small{
+		background-color: lime;
+		font-size: .5em;
+		vertical-align: baseline;
+		/* top | middle | baseline | bottom | px로 값을 줘도 됨(기준은 0 baseline) */
+	}
+	h2{
+		color: #ff0000;
+		font-variant: small-caps;
+		text-decoration: line-through;
+		/* underline | overline | line-through | none */
+	}
+	address{
+		font-style: normal;
+		/* normal | italic | oblique */
+	}
+	.lead{
+		font-size: 1.2em;
+		font-weight: bold;
+		/* bold | bolder | 600 | 700 | 800 | 900 */
+		/* normal | lighter | 100 | 200 | 300 | 400 | 500 */
+		word-spacing: 1em;
+	}
+	.text{
+		text-indent: 1em;
+		text-align: center;
+		/* left | center | right | justify(양쪽졍렬)*/
+		line-height: 1.6;
+	}
+	</style>
+</head>
+<body>
+
+<div id="wrap">
+	<h1>style example <small>sample</small></h1>
+	<h2>Style Example (font-variant)</h2>
+	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, odio?</p>
+	<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ipsum dolorem voluptate illo, doloribus assumenda perspiciatis ipsa explicabo laudantium ut incidunt similique ex magnam laboriosam dignissimos sit. Veniam aliquam iste hic modi, quasi quod voluptatum minus, dolorem omnis reiciendis doloribus sapiente eaque cupiditate esse eligendi ad nisi beatae obcaecati nemo explicabo magnam. Facilis excepturi similique maxime rerum perspiciatis exercitationem nobis laudantium perferendis minus fugiat inventore amet dolores, obcaecati odit aspernatur hic dolorum labore eos iusto quibusdam corporis vel in ab tempore numquam. Exercitationem animi consequuntur, vero, atque asperiores ipsa maxime! Officiis voluptas modi omnis provident. Placeat inventore corporis minus quisquam?</p>
+	<hr>
+	<address>add : Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt adipisci, nisi, distinctio ut enim officia.</address>
+</div>
+	
+</body>
+</html>

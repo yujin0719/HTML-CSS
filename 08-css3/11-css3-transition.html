@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>transition</title>
+	<style>
+	/*flex는 레이아웃 비율 조정할 떄 사용*/
+	body {
+		font: 12px 'Malgun Gothic',sans-serif;
+	}
+	#wrap {
+		width: 900px;
+		margin: 0 auto;
+	}
+	.box {
+		width: 100px;
+		height: 100px;
+		background-color: pink;
+		/*transition: width 3s 1s linear;*/
+		/*transition-property: width;
+		transition-duration: 3s;
+		transition-delay: 1s;
+		transition-timing-function: linear;*/
+		/*transition: 
+			width 3s linear,
+			height 1s 3s,
+			background-color 2s 4s;*/
+		/*transition: all 2s;*/
+		
+		/* 
+			timing function
+				기본값은 ease입니다.
+				ease : cubic-bezier( 0.25, 0.1, 0.25, 1 )과 같습니다.
+				linear : cubic-bezier( 0, 0, 1, 1 )과 같습니다.
+				ease-in : cubic-bezier( 0.42, 0, 1, 1 )과 같습니다.
+				ease-out : cubic-bezier( 0, 0, 0.58, 1 )과 같습니다.
+				ease-in-out : cubic-bezier( 0.42, 0, 0.58, 1 )과 같습니다.
+				step-start : steps( 1, start )와 같습니다.
+				step-end : steps( 1, end )와 같습니다. 
+				steps( n, start|end ) : n단계로 나누어서 변화시킵니다. start 또는 end를 입력하지 않음녀 end로 처리합니다.
+				cubic-bezier( n1, m1, n2, m2 ) : n에는 0부터 1까지의 수를 넣습니다. m에는 마이너스 값도 가능 
+		*/
+		transition: all 1s linear;
+	}
+	.box:hover {
+		width: 100%;
+	}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="box">
+			
+		</div>
+	</div>
+</body>
+</html>

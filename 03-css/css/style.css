@@ -1,0 +1,8 @@
+/*css에서는 세미콜론 꼭!!! 사용해야한다.*/
+/*한글 쓸때는 이것을 쓰는 것이 안전하다.*/
+@charset "utf-8";
+
+p {
+	background-color: lightblue;
+}
+

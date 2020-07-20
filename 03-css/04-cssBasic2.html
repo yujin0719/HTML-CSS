@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css selector2</title>
+</head>
+<style> 
+	body{
+		color: #333;
+	}
+	/*a:link {
+		color: pink;
+		text-decoration: underline;
+	}
+	a:visited{
+		color: skyblue;
+		text-decoration: underline;
+	}
+	a:hover{
+		color: red;
+		text-decoration: underline;
+	}
+	a:active{
+		color: orange;
+		text-decoration: underline;
+	}
+	a:focus{
+		color: purple;
+	}*/
+
+	a{
+		color: #888;
+		text-decoration: none;
+	}
+	a:hover, a:active, a:focus {
+		color: pink;
+		text-decoration: underline;
+	}
+	.lead:first-line{
+		background-color: lime;
+	}
+	.lead:first-letter{
+		font-size: 5em;
+	}
+	h1:before{
+		content:"Before area ";
+		color: pink;
+	}
+	h1:after{
+		content:" After area ";
+		color: skyblue;
+	}
+	div{background-color: purple;} /*type 우선순위 1*/
+	.sample{background-color: green;} /*class 우선순위 10*/
+	#sample{background-color: red;} /*id 우선순위 100*/
+	/*inline style은 1000정도의 우선순위를 가진다. */
+	/*<div class = "sample" id="sample" style="background-color: red"></div>*/
+	div{background-color: red !important} /*이건 무조건 적용되는 값 ; 우선순위 가장 높음*/
+	</style>
+<body>
+
+<h1>css selector</h1>
+<p class="lead"><a href="http://naver.com">Lorem ipsum dolor sit amet.</a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores magnam deleniti earum explicabo quisquam sint iusto voluptatum? Vitae error, quam nam eum voluptates, <a href="#">cupiditate itaque </a>aut ducimus libero similique maxime.</p>
+<hr>
+
+<div class="sample">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, dicta.
+</div>
+
+</body>
+</html>

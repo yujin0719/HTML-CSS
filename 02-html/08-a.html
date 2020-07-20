@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>a</title>
+</head>
+<body>
+
+<h1>anchore</h1>
+<!-- a 요소에 href 속성이 있다면 해당 요소는 하이퍼링크(하이퍼텍스트 앵커)를 나타냅니다. -->
+<!-- a 요소에 href 속성이 없다면 해당 요소는 링크가 올 수 있도록 자리를 마련해두는 것placeholder입니다. -->
+<!-- 요소에 href 속성이 없을 때는 target, rel, media, hreflang, type 속성을 사용하면 안됩니다. -->
+
+<ul>
+	<li><a href="http://daum.net">daum</a></li>
+	<li><a href="http://daum.net" title="다음으로 이동">go daum</a></li>
+	<li><a href="http://daum.net" target="_blank">daum 새 창(새 탭)</a></li>
+	<li><a href="img/photo.jpg" tabindex="1">달빛 사진보기</a></li>
+	<li><a href="img/photo.jpg" download>달빛 사진 다운로드</a></li>
+	<li><a href="mailto:yujin1760@naver.com">yujin1760@naver.comd에게 이메일 보내기</a></li>
+	<li><a href="01-char.html">문자참조</a></li>
+</ul>
+
+<!-- tabindex, accesskey  -->
+<!-- tabindex는 브라우저에서 tab을 했을때 순서를 정해주는 것이다. 안해도 됨! -->
+<!-- tabindex 적용 받는 요소 : a, input, button, select, textarea,..-->
+<!-- accesskey : option + control + 'l' 지정해 놓은 페이지로 바로 이동  -->
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, hic. Libero quaerat accusantium iusto tenetur, facilis aperiam odit minus! Culpa possimus nisi dolor, debitis repellendus eveniet necessitatibus repudiandae maxime eum! <a href="http://www.wah.or.kr" accesskey="l" tabindex="2">웹접근성 연구소</a></p>			
+
+</body>
+</html>
+
+<!-- 각종 속성들 
+     href="URI" : 링크되는 곳의 URI 
+     charset="문자세트" : 링크될 곳의 문자세트 
+     hreflang="언어코드" : 링크될 곳의기본이 되는 언어코드 
+     type="MIME타입" : 링크될 곳의 MIME타입 
+     name="" : 링크의 도달점으로 지정하기 위한 이름 지정 
+     rel="링크타입" : href속성으로 지정되는 링크될 곳과의 관계를 지정 
+     rev="링크타입" : href속성으로 지정되는 링크될 곳에서 본 이 문서와의 관계를 지정 
+     shape="영역의 모양" : 사용자의 조작에 반응할 영역의 모양을 지정 rect, circle, ppoly, default 
+     coords="영역의 좌표" : shape속성으로 지정한 각 좌표를 '.'으로 구분하여 지정 
+     tabindex="Tab이동순서" : 탭키를 눌러 항목 사이를 이동시킬 순서를 지정 0~32767사이의 숫자로 작은값부터 지정 
+     accesskey="단축키" : 'alt'키와같이 누르면 포커싱되게 지정 
+     target="프레임이름" : 링크할 곳의 문서를 표시하는 프레임이름, 혹은 윈도우 이름 지정
+ -->
